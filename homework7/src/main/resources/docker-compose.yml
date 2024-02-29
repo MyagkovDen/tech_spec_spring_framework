@@ -1,0 +1,10 @@
+version: "2.22.0"
+services:
+  db:   
+    image: "postgres:16.1"
+    environment:
+      POSTGRES_DB: "bank"
+      POSTGRES_USER: "bank"
+      POSTGRES_PASSWORD: "123"
+    ports:
+      - "54321:5432"
