@@ -1,0 +1,11 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: api-gateway
+routes:
+  - id: Microservice2
+    uri: http://localhost:8085/
+    predicates:
+  - Path=/tasks-service/**
